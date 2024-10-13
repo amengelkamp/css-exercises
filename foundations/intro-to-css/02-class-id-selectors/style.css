@@ -1,0 +1,24 @@
+/* style.css */
+
+.odd-numbered{
+    background-color: rgb(213, 37, 37, 0.527);
+    font-family: Verdana, "DejaVu Sans", sans-serif;
+}
+
+.adjust-font-size{
+    font-size: 24px;
+}
+
+
+#number-two {
+    color: #0000ff;
+    font-size: 36px;
+}
+
+#number-four {
+    background-color: hsl(80, 100%, 80%);
+    font-weight: bold;
+}
+
+
+
