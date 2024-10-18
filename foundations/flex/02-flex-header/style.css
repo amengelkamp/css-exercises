@@ -1,8 +1,24 @@
-.header  {
+
+
+/*- Your solution does not use floats, inline-block, or absolute positioning.
+*/
+/*- There is space between all items and the edge of the header (specific px amount doesn't matter here).
+*/
+
+
+
+.header
+  {
   font-family: monospace;
   background: papayawhip;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
 }
 
+/* Logo is centered vertically and horizontally.
+*/
 .logo {
   font-size: 48px;
   font-weight: 900;
@@ -11,11 +27,19 @@
   padding: 4px 32px;
 }
 
+/*- list-items are horizontal, and are centered vertically inside the header.
+*/
 ul {
   /* this removes the dots on the list items*/
+  display: flex;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 8 px;
 }
 
+/*- left-links and right-links are pushed all the way to the left and right, and stay at the edge of the header when the page is resized.
+*/
 a {
   font-size: 22px;
   background: white;
