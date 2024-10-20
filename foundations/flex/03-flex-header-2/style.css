@@ -40,10 +40,11 @@ you'll learn about it later. */
   justify-content: space-between;
 }
 
-.itemsleft {
+.itemsleft, .itemsright {
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 8px;
 }
 
 
@@ -72,12 +73,6 @@ you'll learn about it later. */
     list-style-type: none;
   }
 
-.itemsright {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  align-items: center;
-}
 
 .notifications {
   border: none;
