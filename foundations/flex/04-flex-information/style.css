@@ -36,17 +36,17 @@ body {
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 8px 52px;
-  justify-content: space-around;
+  /* justify-content: space-around; */
 }
 
 
 
 .text {
-  display: flex;
+ /* display: flex;  */
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
+  /* flex-wrap: wrap; */
+  /* justify-content: center; */
+  text-align: center; 
 }
 
 img {
@@ -55,13 +55,13 @@ img {
 }
 
 .image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  /* display: flex; */
+  /* justify-content: center; */
+  align-items: center; 
+} 
 
 .barberry, .chili, .pepper, .saffron {
-  display: flex;
+  display: flex; 
   flex-direction: column;
   align-items: center;
   max-width: 200px;
