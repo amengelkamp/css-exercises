@@ -25,9 +25,9 @@ body {
  
 }
 
-*{
+ *{
   border: 2px solid black;
-} 
+}  
 
 .modal {
   background: white;
@@ -38,6 +38,14 @@ body {
   flex-direction: row;
   padding: 20px;
 }
+
+
+.icononpage {
+ 
+  padding-right: 6px;
+  padding-left: 6px;
+  } 
+
 
 .icon {
   color: royalblue;
@@ -52,14 +60,18 @@ body {
   justify-content: center;
 }
 
+
+
+
+
 .header {
 font-weight: bold;
 font-size: larger;
 } 
 
 .text {
-margin-bottom: 8px;
-margin-top: 8px;
+margin-bottom: 10px;
+margin-top: 10px;
 }
 
 .close-button {
