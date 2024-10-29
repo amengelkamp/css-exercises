@@ -1,12 +1,12 @@
 /* - 
-[] The header is at the top of the page, the footer is at the bottom, and they stay in place if you resize your screen.
+[x] The header is at the top of the page, the footer is at the bottom, and they stay in place if you resize your screen.
 [x] The header and footer have padding.
 [x - by space between] The links in the header and footer are pushed to either side.
-[] There is space between the links in the header and footer.
-[] The footer has a light gray background (`#eeeeee`).
-[] The logo, input and buttons are centered in the screen.
-[] The buttons have an appropriate amount of padding.
-[] There is space between the logo, input and buttons. */
+[x] There is space between the links in the header and footer.
+[x] The footer has a light gray background (`#eeeeee`).
+[x] The logo, input and buttons are centered in the screen.
+[x] The buttons have an appropriate amount of padding.
+[x] There is space between the logo, input and buttons. */
 
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
@@ -18,23 +18,52 @@ body {
   font-family: Roboto, sans-serif;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+
 }
 
-*{
+/* *{
   border: 2px solid black;
-} 
+}  */
 
 /* Hier sind about, store profile, settings */
 .header, .footer {
 display: flex;
-justify-content: space-between;
+justify-content: space-between; 
 padding: 8px;
+}
+
+.footer {
+  background-color: #eeeeee;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 52px;
+    display: flex;
+  }
+
+  .header {
+    
+      position: fixed;
+     top: 0;
+      left: 0;
+      right: 0;
+      height: 52px;
+      display: flex;
+    }
+
+
+
+a {
+  text-decoration: none;
 }
 
 .left-links, .right-links {
   display: flex; 
   flex-direction: row;
-  gap: 3px;
+  gap: 10px;
+  padding: 0%;
   /* hier is noch zu viel box falsch dran  */
 }
 
@@ -43,6 +72,7 @@ padding: 8px;
   flex-direction: column;
   display: flex;
   align-items: center;
+  gap: 8px;
 }
 
 
@@ -55,6 +85,11 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-weight: bold;
 }
 
 input {
