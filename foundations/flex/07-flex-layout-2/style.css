@@ -12,7 +12,7 @@
 [x] The sidebar links are size 24px, are white, and do not have the underline text decoration.
 [x] The sidebar has 16px padding.
 [x] There is 48px padding around the 'cards' section.
-[] The sidebar and cards take up all available space above the footer.
+[x] The sidebar and cards take up all available space above the footer.
 [] The cards are arranged horizontally, but wrap to multiple lines when they run out of room on the page. */
 
 
@@ -46,9 +46,22 @@ body {
 
 .sidebarandcards {
 display: flex;
-
+flex: 1;
+margin: 0;
+padding: 0;
+height: 100%;
+box-sizing: border-box;
 }
 
+.sidebar {
+  width: 300px;
+  background: royalblue;
+  box-sizing: border-box;
+  padding: 16px;
+  width: 300px;
+  flex: 0 0 12em;
+  margin-left: auto;
+} 
 
 .footer {
   height: 72px;
@@ -63,14 +76,7 @@ display: flex;
   right: 0;
 }
 
-.sidebar {
-  width: 300px;
-  background: royalblue;
-  box-sizing: border-box;
-  padding: 16px;
-  width: 300px;
-  flex: 0 0 12em;
-}
+
 
 a {
   text-decoration: none;
@@ -85,9 +91,10 @@ ul {
 
 .cardsorder {
 display: flex;
-justify-content: baseline;
+justify-content: space-between;
 padding: 48px;
 flex-wrap: wrap;
+gap: 10px;
 }
 
 
@@ -95,4 +102,5 @@ flex-wrap: wrap;
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  flex: 0 1 150px; /* Flex-grow, flex-shrink, and base width */
 }
