@@ -46,7 +46,6 @@ body {
 
 .sidebarandcards {
 display: flex;
-flex: 1;
 margin: 0;
 padding: 0;
 height: 100%;
@@ -54,14 +53,30 @@ box-sizing: border-box;
 }
 
 .sidebar {
-  width: 300px;
   background: royalblue;
-  box-sizing: border-box;
-  padding: 16px;
+  flex: 1;
   width: 300px;
+  /* box-sizing: border-box; */
+  padding-top: 16px;
   flex: 0 0 12em;
-  margin-left: auto;
 } 
+
+a {
+  text-decoration: none;
+  color: ghostwhite;
+  font-size: 24px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+li {
+  margin-bottom: 15px;
+}
 
 .footer {
   height: 72px;
@@ -73,19 +88,6 @@ box-sizing: border-box;
   bottom: 0;
   left: 0;
   right: 0;
-}
-
-
-
-a {
-  text-decoration: none;
-  color: ghostwhite;
-  font-size: 24px;
-}
-
-ul {
-  list-style-type: none;
-
 }
 
 .cardsorder {
