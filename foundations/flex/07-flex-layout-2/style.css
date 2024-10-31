@@ -13,7 +13,7 @@
 [x] The sidebar has 16px padding.
 [x] There is 48px padding around the 'cards' section.
 [x] The sidebar and cards take up all available space above the footer.
-[] The cards are arranged horizontally, but wrap to multiple lines when they run out of room on the page. */
+[x] The cards are arranged horizontally, but wrap to multiple lines when they run out of room on the page. */
 
 
 
@@ -28,9 +28,6 @@ body {
 }
 
 
- *{
-  border: 2px solid black;
-}   
 
 
 .header {
@@ -92,7 +89,6 @@ li {
 
 .cardsorder {
 display: flex;
-justify-content: space-between;
 padding: 48px;
 flex-wrap: wrap;
 gap: 10px;
@@ -103,5 +99,8 @@ gap: 10px;
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
-  flex: 0 1 150px; /* Flex-grow, flex-shrink, and base width */
+  flex: 1 1 150px; 
+  min-width: 200px;
+  max-width: 200px;
+  padding: 2px 10px 6px 10px;
 }
